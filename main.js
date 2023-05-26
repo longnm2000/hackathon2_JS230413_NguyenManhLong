@@ -108,7 +108,7 @@ function updateSudent(index) {
   for (let i = 0; i < genderInfo.length; i++) {
     if (genderInfo[i].value == students[findStudent].gender) {
       console.log(students[findStudent]);
-      genderInfo[i].checked;
+      genderInfo[i].checked = true;
     }
   }
 
