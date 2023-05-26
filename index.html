@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="submit-form">
+        <form action="">
+          <table>
+            <caption>
+              Thông tin học viên
+            </caption>
+            <tr>
+              <td><label for="fullName">Họ và Tên</label></td>
+              <td><input type="text" name="name" id="fullName" required /></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td><input type="email" name="email" id="email" required /></td>
+            </tr>
+            <tr>
+              <td><label for="telNumber">Số điện thoại</label></td>
+              <td>
+                <input type="tel" name="telNumber" id="telNumber" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="homeTown">Quê quán</label></td>
+              <td>
+                <input type="text" name="homeTown" id="homeTown" required />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Giới tính</span>
+              </td>
+              <td>
+                <label>
+                  <input type="radio" name="gender" value="Nam" checked />
+                  <span>Nam</span>
+                </label>
+                <label>
+                  <input type="radio" name="gender" value="Nữ" />
+                  <span>Nữ</span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button type="button" id="submit">Lưu lại</button></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="info-table">
+        <div>
+          <label for="searchInfo">Tìm kiếm tên học viên</label>
+          <input type="text" name="searchInfo" id="searchInfo" />
+          <button id="searchBtn">search</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Họ và Tên</th>
+              <th>Email</th>
+              <th>Điện thoại</th>
+              <th>Địa chỉ</th>
+              <th>Gender</th>
+              <th>Hành động</th>
+              <th><button id="sort-students">sắp xếp (alpha b)</button></th>
+            </tr>
+          </thead>
+          <tbody id="main-info"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
